@@ -9,8 +9,8 @@ networks.
 
 import sys
 
-
-if __name__ == "__main__":
+def main():
+    """Main entry point for the Sherlock module."""
     # Check if the user is using the correct version of Python
     python_version = sys.version.split()[0]
 
@@ -20,3 +20,6 @@ if __name__ == "__main__":
 
     from sherlock_project import sherlock
     sherlock.main()
+
+if __name__ == "__main__":
+    main()
